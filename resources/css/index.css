@@ -1,0 +1,188 @@
+/*GENERALES*/
+
+ul {
+        list-style: none;
+}
+
+img {
+        width: 100%;
+        height: 80%;
+}
+
+a {
+        text-decoration: none;        
+        color: black;
+}
+
+body {
+        background-image: url(../imagenes/fondo.jpg);
+        background-size: cover;
+        font-family: 'Times New Roman', Times, serif;
+        width: 100%;
+        margin: none;
+}
+
+/*HEADER*/
+
+header {
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+}
+
+header > img {
+                box-shadow: 3px 3px 6px black;
+                border-radius: 15px;
+                height: 5%;
+                width: 5%;
+}
+
+header > h2 {
+                font-weight: bold;
+}
+
+header > button {
+                    border-radius: 5px;
+                    border-color: blueviolet;
+                    background-color: transparent;
+                    padding: 7px;
+                    font-size: large;
+                    font-style: italic;
+                    font-weight: bold;
+}
+
+header > button:hover {
+                        font-size: x-large;
+                        font-weight: bold;
+}
+
+/*NAVIGATION BAR*/
+
+#mainLinks {
+                display: inline-flex;
+                width: 100%;
+                justify-content: space-around;
+                font-size: large;
+                font-weight: bold;
+                background-color: lightskyblue;
+                padding: 10px;
+                margin-bottom: 0%;
+}
+
+
+#mainLinks > li > a:hover {
+                                color: blueviolet;
+                                font-size: larger;
+                                font-weight: bolder;
+}
+
+
+/*TARJETAS*/
+
+#tarjetas {
+            display: inline-flex;
+            width: 100%;
+            justify-content: center;
+            background-color: lightsteelblue;
+            padding: 15px;
+}
+
+#tarjetas > a > div {
+                        width: 80%;
+                        margin-left: 10%;
+                        margin-right: 10%;
+                        padding: 10px;
+                        box-shadow: 5px 5px 10px black;
+}
+
+#tarjetas > a > div:hover {
+                            background-color: darkblue;
+                            color: wheat;
+                            transform: scale(0.9);
+                            transform: translateX(10px);
+}
+
+#tarjetas > a > div > i {
+                            font-size: 40px;
+                            text-align: center;
+}
+
+#tarTer {
+            animation: entrader 4s ease-in;
+}
+
+#tarAc {
+            animation: entrader1 8s ease-in;
+}
+
+#tarAe {
+            animation: entrader1 11s ease-in;
+}
+
+#tarOt {
+            animation: entrader1 13s ease-in;            
+}
+
+/*CONTENIDO*/
+
+#mainContent {
+                width: 100%;
+                text-align: center;
+}
+
+#mainContent > section {
+                            width: 90%;
+                            background-color: rgba(234, 255, 252, 0.486);
+                            padding: 10px;
+                            margin-left: 5%;
+}
+
+#mainContent > section > ul {
+                                display: inline-flex;
+                                width: 100%;
+}
+
+#mainContent > section > ul > li {
+                                    display: block;
+                                    margin-left: 10%;
+                                    margin-right: 10%;
+}
+
+/*FOOTER*/
+
+footer {
+            background-color: cornsilk;
+            margin-bottom: 0px;
+            text-align: center;
+}
+
+footer > section {
+                    display: inline-flex;
+}
+
+footer > section > ul {
+                            text-align: left;
+}
+
+/*KEYFRAME ANIMATIONS*/
+
+@keyframes entrader {
+    0% {
+            transform: translateX(1500px);
+    }
+    100% {
+            transform: translateX(0px);
+    }
+}
+
+@keyframes entrader1 {
+    0% {
+            transform: translateX(1000px);
+    }
+    50% {
+        transform: translateX(1000px);
+    }
+    100% {
+            transform: translateX(0px);
+    }
+}
