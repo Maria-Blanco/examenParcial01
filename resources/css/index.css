@@ -54,6 +54,8 @@ header > button {
 header > button:hover {
                         font-size: x-large;
                         font-weight: bold;
+                        background-color: blueviolet;
+                        color: cornsilk;
 }
 
 /*NAVIGATION BAR*/
@@ -69,11 +71,15 @@ header > button:hover {
                 margin-bottom: 0%;
 }
 
+#mainLinks > li {
+                    animation: entraizq 4s ease-in;
+}
 
 #mainLinks > li > a:hover {
                                 color: blueviolet;
                                 font-size: larger;
                                 font-weight: bolder;
+                                border-bottom: 2px solid blueviolet;
 }
 
 
@@ -148,6 +154,15 @@ header > button:hover {
                                     margin-right: 10%;
 }
 
+#mainContent > section > ul > li > img {
+                                            animation: imgBounce 6s ease-in;
+}
+
+#mainContent > section > ul > li > img:hover {
+                                                transform: scale(1.3);
+                                                transform: translateY(-15px);
+}
+
 /*FOOTER*/
 
 footer {
@@ -162,6 +177,16 @@ footer > section {
 
 footer > section > ul {
                             text-align: left;
+                            animation: bounceIn 6s ease-in;
+}
+
+footer > section > ul > li:hover {
+                                    transform: scale(1.2);
+                                    transform: translateX(15px);
+                                    background-color: rgba(137, 43, 226, 0.671);
+                                    border-radius: 5px;
+                                    color: azure;
+                                    padding: 5px;
 }
 
 /*KEYFRAME ANIMATIONS*/
@@ -180,9 +205,44 @@ footer > section > ul {
             transform: translateX(1000px);
     }
     50% {
-        transform: translateX(1000px);
+            transform: translateX(1000px);
     }
     100% {
+            transform: translateX(0px);
+    }
+}
+
+@keyframes entraizq {
+    0% {
+            transform: translateX(-1300px);
+    }
+    100% {
+            transform: translateX(0px);
+    }
+}
+
+@keyframes imgBounce {
+    0% {
+            transform: scale(0)
+    }
+    50% {
+            transform: scale(1.2)
+    }
+    100% {
+            transform: scale(1)
+    }
+}
+
+@keyframes bounceIn {
+    0% {
+            transform: scale(0);
+            transform: translateX(-900px);
+    }
+    50% {
+            transform: scale(1.5);
+    }
+    100% {
+            transform: scale(1);
             transform: translateX(0px);
     }
 }
